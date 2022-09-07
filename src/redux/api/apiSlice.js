@@ -60,7 +60,7 @@ export const apiSlice = createApi({
         return {
           url: `/campus/${payload.id}`,
           method: "PUT",
-          body: payload.id,
+          body: payload.data,
         };
       },
       invalidatesTags: ["SingleCampus"],
